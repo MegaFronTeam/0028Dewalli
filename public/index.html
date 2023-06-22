@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>DEWALLI | Сайт в разработке</title>
+		<meta name="description" content="Скоро здесь появится сайт компании DEWALLI.COM">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,  shrink-to-fit=no">
+		<link type="image/ico" href="img/favicon.ico" rel="shortcut icon"><meta name="format-detection" content="telephone=no"> <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700&display=swap" rel="stylesheet">
+		<link href="css/main.min.css" rel="stylesheet"/>
+		<script>
+			function addBlock(elem) {
+				fetch(`parts/${elem}.html`)
+					.then(response => response.text())
+					.then( text => {
+						const wrap = document.querySelector(`#${elem}Wrap`);
+						wrap.insertAdjacentHTML('afterend', text);
+							wrap.remove();
+						}
+					);
+			}
+		</script>
+	</head>
+	<body class="main-page">
+		<div class="main-wrapper">
+			<div class="screen">
+				<div class="screen__head"><img src="img/logo.svg" alt="">
+				</div>
+				<div class="screen__body">
+					<div data-json="an.json"></div>
+					<div class="screen__title">Скоро.
+					</div>
+					<p>На&nbsp;данный момент сайт находится в&nbsp;разработке.</p>
+				</div>
+				<div class="screen__footer">&copy;&nbsp;2023&nbsp;DEWALLI.COM
+				</div>
+			</div>
+		</div>
+		<script src="libs/lottie-web/build/player/lottie.min.js"></script>
+		<script src="js/common.js"></script>
+	</body>
+</html>

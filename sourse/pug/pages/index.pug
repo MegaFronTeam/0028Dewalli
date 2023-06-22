@@ -1,0 +1,43 @@
+extends ../layout/main.pug
+
+//- include ../blocks/headerBlock/_headerBlock.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sContent/_sContent.pug
+ 
+//- include ../blocks/sContact/_sContact.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sForm/_sForm.pug
+//- include ../blocks/sCatalog/_sCatalog.pug
+
+block variables
+	- let  mainPage= 'main-page' 
+	- let  bg= null
+
+block title
+	- let  title= 'DEWALLI | Сайт в разработке'
+	title= title
+block pagecontent
+	//- +mob-mnu()
+	
+	
+	//- +parts('header')
+	+b.screen
+		+e.head
+			img(src="img/logo.svg", alt="")
+		+e.body
+			div(data-json="an.json")
+			+e.title Скоро.
+			p На&nbsp;данный момент сайт находится в&nbsp;разработке.
+		+e.footer &copy;&nbsp;2023&nbsp;DEWALLI.COM
+
+	//- 	.ratiod
+	//- 	+headerBlock 
+	//- 	+sCatalog
+	//- 	+sForm()
+	//- 	+sContact()
+		
+	//- +parts('footer')
+      
+
+
+
