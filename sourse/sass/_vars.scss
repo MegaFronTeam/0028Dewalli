@@ -58,7 +58,7 @@ $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #d63384 !default;
 $red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
+$orange:  #FE6000;
 $yellow:  #ffc107 !default;
 $green:   #198754 !default;
 $teal:    #20c997 !default;
@@ -315,7 +315,7 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+$primary:       $orange;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -464,7 +464,7 @@ $emphasis-color:            $black !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         inherit;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;

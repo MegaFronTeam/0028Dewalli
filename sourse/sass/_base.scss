@@ -558,6 +558,14 @@ iframe {
 	justify-content: space-between;
 	padding: calc(env(safe-area-inset-top, 0px) + #{rem(46)}) 0 calc(env(safe-area-inset-bottom, 0px) + #{rem(40)});
 	font-weight: bold;
+	p{
+		margin-left: auto;
+		margin-right: auto;
+		@include media-breakpoint-up(sm) {
+			max-width: rem(440);
+		}
+		max-width: rem(340);
+	}
 	img{
 		width: em(224);
 	}
